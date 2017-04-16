@@ -1,0 +1,1 @@
+# LazyPHP-multi-site
