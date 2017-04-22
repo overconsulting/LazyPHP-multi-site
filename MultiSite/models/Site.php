@@ -9,6 +9,7 @@ class Site extends Model
     protected $permittedColumns = array(
         'label',
         'host',
-        'description'
+        'description',
+        'active'
     );
 }

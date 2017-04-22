@@ -10,6 +10,6 @@ class MultiSiteController extends CockpitController
     public function changehostAction()
     {
         Session::set('site_id', $this->request->post['site_id']);
-        $this->redirect('cockpit');
+        $this->redirect($this->request->post['redirect']);
     }
 }
