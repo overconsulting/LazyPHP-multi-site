@@ -1,7 +1,7 @@
 <h1 class="page-title">{{ pageTitle }}</h1>
 <div class="box box-danger">
     <div class="box-header">
-        <h3 class="box-title">Site : <?php echo $params['site']->label; ?></h3>
+        <h3 class="box-title">{{ blockTitle }}</h3>
         <div class="box-tools pull-right">
             <a href="<?php echo url('cockpit_multisite_sites_index'); ?>" class="btn btn-default btn-xs"><i class="fa fa-arrow-left"></i></a>
         </div>

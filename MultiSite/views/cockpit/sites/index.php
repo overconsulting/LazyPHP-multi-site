@@ -1,7 +1,7 @@
 <h1 class="page-title">{{ pageTitle }}</h1>
 <div class="box box-danger">
     <div class="box-header">
-        <h3 class="box-title">Liste des sites</h3>
+        <h3 class="box-title">{{ blockTitle }}</h3>
         <div class="box-tools pull-right">
             {% button url="cockpit_multisite_sites_new" type="success" size="xs" icon="plus" %}
         </div>

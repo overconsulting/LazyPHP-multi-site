@@ -2,7 +2,7 @@
 
 <div class="box box-success">
     <div class="box-header">
-        <h3 class="box-title">Gestion des Site</h3>
+        <h3 class="box-title">{{ blockTitle }}</h3>
 
         <div class="box-tools pull-right">
             <a href="<?php echo url('cockpit_multisite_sites_index'); ?>" class="btn btn-default btn-xs"><i class="fa fa-arrow-left"></i></a>
