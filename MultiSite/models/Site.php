@@ -2,7 +2,7 @@
 
 namespace MultiSite\models;
 
-use System\Model;
+use Core\Model;
 
 class Site extends Model
 {
