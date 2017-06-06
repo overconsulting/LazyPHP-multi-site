@@ -4,8 +4,8 @@ namespace MultiSite\controllers\cockpit;
 
 use app\controllers\cockpit\CockpitController;
 use MultiSite\models\Site;
-use System\Router;
-use System\Session;
+use Core\Router;
+use Core\Session;
 
 class SitesController extends CockpitController
 {

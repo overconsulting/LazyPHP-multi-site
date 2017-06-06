@@ -3,7 +3,7 @@
 namespace MultiSite\controllers\cockpit;
 
 use app\controllers\cockpit\CockpitController;
-use System\Session;
+use Core\Session;
 
 class MultiSiteController extends CockpitController
 {
