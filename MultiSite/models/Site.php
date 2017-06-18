@@ -10,6 +10,7 @@ class Site extends Model
         'label',
         'host',
         'description',
+        'brand_logo',
         'active'
     );
 }

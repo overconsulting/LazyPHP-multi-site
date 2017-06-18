@@ -13,7 +13,7 @@ class SitesController extends CockpitController
     {
         $sites = Site::findAll();
 
-        $this->render('index', array(
+        $this->render('multisite::sites::index', array(
             'sites' => $sites,
             'pageTitle' => '<i class="fa fa-snowflake-o"></i> Gestion des sites',
             'blockTitle'    => 'Liste des sites'
@@ -24,7 +24,7 @@ class SitesController extends CockpitController
     {
         $site = Site::findById($id);
 
-        $this->render('show', array(
+        $this->render('multisite::sites::show', array(
             'site'          => $site,
             'pageTitle'     => '<i class="fa fa-snowflake-o"></i> Gestion des sites',
             'blockTitle'    => 'Fiche du site : '.$site->label,
@@ -37,7 +37,7 @@ class SitesController extends CockpitController
             $this->site = new Site();
         }
 
-        $this->render('edit', array(
+        $this->render('multisite::sites::edit', array(
             'pageTitle'     => '<i class="fa fa-snowflake-o"></i> Gestion des sites',
             'blockTitle'    => 'Nouveau site',
             'site'          => $this->site,
@@ -70,7 +70,7 @@ class SitesController extends CockpitController
             $this->site = Site::findById($id);
         }
 
-        $this->render('edit', array(
+        $this->render('multisite::sites::edit', array(
             'pageTitle'     => '<i class="fa fa-snowflake-o"></i> Gestion des sites',
             'blockTitle'    => 'Edition du site: '.$this->site->label,
             'site'          => $this->site,
