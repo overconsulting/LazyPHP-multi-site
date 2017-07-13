@@ -5,7 +5,7 @@
         <h3 class="box-title">{{ blockTitle }}</h3>
 
         <div class="box-tools pull-right">
-            <a href="<?php echo url('cockpit_multisite_sites_index'); ?>" class="btn btn-default btn-xs"><i class="fa fa-arrow-left"></i></a>
+            <a href="<?php echo url('cockpit_multisite_sites_index'); ?>" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-left"></i></a>
         </div>
     </div>
     <div class="box-body">

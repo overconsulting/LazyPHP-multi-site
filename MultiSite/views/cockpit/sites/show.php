@@ -3,9 +3,9 @@
     <div class="box-header">
         <h3 class="box-title">{{ blockTitle }}</h3>
         <div class="box-tools pull-right">
-            {% button url="cockpit_multisite_sites_edit_<?php echo $site->id; ?>" type="info" size="xs" icon="pencil" %}
-            {% button url="cockpit_multisite_sites_delete_<?php echo $site->id; ?>" type="danger" size="xs" icon="trash-o" confirmation="Vous confirmer vouloir supprimer ce site ?" %}
-            <a href="<?php echo url('cockpit_multisite_sites_index'); ?>" class="btn btn-default btn-xs"><i class="fa fa-arrow-left"></i></a>
+            {% button url="cockpit_multisite_sites_edit_<?php echo $site->id; ?>" type="info" size="sm" icon="pencil" %}
+            {% button url="cockpit_multisite_sites_delete_<?php echo $site->id; ?>" type="danger" size="sm" icon="trash-o" confirmation="Vous confirmer vouloir supprimer ce site ?" %}
+            <a href="<?php echo url('cockpit_multisite_sites_index'); ?>" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-left"></i></a>
         </div>
     </div>
     <div class="box-body">

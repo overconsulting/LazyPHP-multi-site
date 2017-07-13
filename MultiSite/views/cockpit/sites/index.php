@@ -3,7 +3,7 @@
     <div class="box-header">
         <h3 class="box-title">{{ blockTitle }}</h3>
         <div class="box-tools pull-right">
-            {% button url="cockpit_multisite_sites_new" type="success" size="xs" icon="plus" %}
+            {% button url="cockpit_multisite_sites_new" type="success" size="sm" icon="plus" %}
         </div>
     </div>
     <div class="box-body">
@@ -32,9 +32,9 @@ foreach ($params['sites'] as $site) {
     }
             echo '</td>'.
             '<td>';?>
-    {% button url="cockpit_multisite_sites_show_<?php echo $site->id; ?>" type="default" size="xs" icon="eye" %}
-    {% button url="cockpit_multisite_sites_edit_<?php echo $site->id; ?>" type="info" size="xs" icon="pencil" %}
-    {% button url="cockpit_multisite_sites_delete_<?php echo $site->id; ?>" type="danger" size="xs" icon="trash-o" confirmation="Vous confirmer vouloir supprimer ce site ?" %}
+    {% button url="cockpit_multisite_sites_show_<?php echo $site->id; ?>" type="secondary" size="sm" icon="eye" %}
+    {% button url="cockpit_multisite_sites_edit_<?php echo $site->id; ?>" type="info" size="sm" icon="pencil" %}
+    {% button url="cockpit_multisite_sites_delete_<?php echo $site->id; ?>" type="danger" size="sm" icon="trash-o" confirmation="Vous confirmer vouloir supprimer ce site ?" %}
 <?php
     echo
             '</td>'.

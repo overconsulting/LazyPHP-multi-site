@@ -11,6 +11,9 @@ class Site extends Model
         'host',
         'description',
         'brand_logo',
-        'active'
+        'active',
+        'logo_access_user',
+        'logo_access_admin',
+        'root_path'
     );
 }
