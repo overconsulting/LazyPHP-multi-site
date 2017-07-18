@@ -16,4 +16,26 @@ class Site extends Model
         'logo_access_admin',
         'root_path'
     );
+
+    public static function getOptions($parent_id = null)
+    {
+        $options = array(
+            0 => array(
+                'value' => '',
+                'label' => '---'
+            )
+        );
+
+        $sites = self::findAll();
+
+        foreach ($sites as $site) {
+            $options[$site->id] = array(
+                'value' => $site->id,
+                'label' => $site->label
+            );
+        }
+
+        return $options;
+    }
+
 }

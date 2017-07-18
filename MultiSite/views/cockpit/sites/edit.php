@@ -9,7 +9,7 @@
         </div>
     </div>
     <div class="box-body">
-		{% form_open id="formMenu" action="formAction" class="form-horizontal" %}
+		{% form_open id="formMenu" action="formAction" %}
 		    {% input_text name="label" model="site.label" label="Label" %}
 		    {% input_text name="host" model="site.host" label="Host" %}
             {% input_textarea name="description" model="site.description" label="Description" rows="10" %}
