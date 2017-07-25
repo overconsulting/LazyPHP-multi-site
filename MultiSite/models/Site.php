@@ -14,7 +14,12 @@ class Site extends Model
         'active',
         'logo_access_user',
         'logo_access_admin',
-        'root_path'
+        'root_path',
+        'facebook',
+        'twitter',
+        'pinterest',
+        'googleplus',
+        'theme'
     );
 
     public static function getOptions($parent_id = null)

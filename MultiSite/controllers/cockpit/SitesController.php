@@ -70,10 +70,22 @@ class SitesController extends CockpitController
             $this->site = Site::findById($id);
         }
 
+        $options = array(
+            0 => array(
+                'value' => 'default',
+                'label' => 'Thème par défault'
+            ),
+            1 => array(
+                'value' => 'dark',
+                'label' => 'Thème dark'
+            ),
+        );
+
         $this->render('multiSite::sites::edit', array(
             'pageTitle'     => '<i class="fa fa-snowflake-o"></i> Gestion des sites',
             'blockTitle'    => 'Edition du site: '.$this->site->label,
             'site'          => $this->site,
+            'options'       => $options,
             'formAction'    => url('cockpit_multisite_sites_update_'.$id)
         ));
     }
@@ -90,7 +102,11 @@ class SitesController extends CockpitController
         // if ($this->category->valid()) {
         if ($this->site->update((array)$this->site)) {
             Session::addFlash('Site modifiée', 'success');
-            $this->redirect('cockpit_multisite_sites_index');
+            if ($this->current_administrator !== null && $this->current_administrator->site_id === null) {
+                $this->redirect('cockpit_multisite_sites_index');
+            } else {
+                $this->redirect('cockpit_multisite_sites_show_'.$this->current_administrator->site_id);
+            }
         } else {
             Session::addFlash('Erreur mise à jour base de données', 'danger');
         }

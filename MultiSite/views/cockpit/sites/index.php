@@ -12,7 +12,8 @@
 				<tr>
 					<th width="1%">ID</th>
                     <th width="20%">Label</th>
-                    <th width="50%">Host</th>
+                    <th width="40%">Host</th>
+                    <th width="10%">Thème</th>
                     <th width="10%">Status</th>
 					<th width="10%">Actions</th>
 				</tr>
@@ -24,6 +25,7 @@ foreach ($params['sites'] as $site) {
             '<td>'.$site->id.'</td>'.
             '<td>'.$site->label.'</td>'.
             '<td>'.$site->host.'</td>'.
+            '<td>'.$site->theme.'</td>'.
             '<td>';
     if ($site->active == 1) {
         echo '<span class="label label-success">Activé</span>';
