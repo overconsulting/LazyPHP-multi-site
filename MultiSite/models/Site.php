@@ -42,5 +42,4 @@ class Site extends Model
 
         return $options;
     }
-
 }
